@@ -29,11 +29,6 @@ public class PlayerController : MonoBehaviour {
 	
 	[Space(10)]
 	
-	[Header("> UI")]
-	public GameObject pausePanel;
-	
-	[Space(10)]
-	
 	[Header("> Animation")]
 	public GameObject trirreme;
 	public Animation diveAnimation;
@@ -49,36 +44,22 @@ public class PlayerController : MonoBehaviour {
 	Quaternion originalRotation;
 	Vector3 originalPosition;
 	
-	// Save Manager
-	private SaveLoadManager saveData;
-	
 	// Inicialização
 	void Start () {
 		trirremeAnim = trirreme.GetComponent<Animator>();
 		waterSplashEmission = waterSplash.emission;
-		saveData = GameObject.Find("SaveLoadManager").GetComponent<SaveLoadManager>();
 		
 		originalRotation = Quaternion.identity;
 		originalPosition = transform.position;
 	}
 	
 	void Update () {
-		// Pausa
-		if (Input.GetButtonDown("Pausa")) {
-			pausePanel.SetActive(!pausePanel.activeSelf);
-			
-			if (pausePanel.activeSelf == true) {Time.timeScale = 0;}
-			else if (pausePanel.activeSelf == false) {Time.timeScale = 1;}
-		}
-		
+
 		// Permite o controle
 		if (controllerActive) {
 			// Reseta a posição
 			if (Input.GetButtonDown("Reset")) {StartCoroutine(ResetPosition());}
-		
-			// Muda o ângulo da câmera
-			if (Input.GetButtonDown("CamSwitch")) {CameraSwitch();}
-			
+
 			// Permite o mergulho
 			if (diveActive) {
 				if (Input.GetButtonDown("Dive")) {StartCoroutine(Dive());}
@@ -91,9 +72,7 @@ public class PlayerController : MonoBehaviour {
 				Swim();
 			}
 		}
-		
-		// Mostra o save atual
-		Debug.Log("Pickups: " + saveData.pickups.ToString() + " Name: " + saveData.playerName);
+
 	}
 	
 	// Controle da Navegação
@@ -203,20 +182,7 @@ public class PlayerController : MonoBehaviour {
 		// Ativa o controle
 		controllerActive = true;
 	}
-	
-	// Muda o ângulo da câmera
-	void CameraSwitch() {
-		cameraLeft = !cameraLeft;
-		
-		if (cameraLeft) {
-			camera.transform.DORotate(new Vector3(0,13,0), 1, RotateMode.Fast);
-			camera.transform.DOMove(leftAngle.position, 1, false);
-		} else {
-			camera.transform.DORotate(new Vector3(0,-13,0), 1, RotateMode.Fast);
-			camera.transform.DOMove(rightAngle.position, 1, false);
-		}
-	}
-	
+
 	// Colisão
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Surface") {

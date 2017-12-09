@@ -10,10 +10,8 @@ public class PickupMagnet : MonoBehaviour {
 	public float pickupSpeed;
 	public GameObject target;
 	
-	// Save Manager
-	private SaveLoadManager saveData;
-	
-	void Start() {saveData = GameObject.Find("SaveLoadManager").GetComponent<SaveLoadManager>();}
+	void Start() {
+    }
 	
 	// Colisão
 	void OnTriggerEnter(Collider other) {
@@ -30,8 +28,8 @@ public class PickupMagnet : MonoBehaviour {
 			}
 			
 			// Adiciona um item no save
-			saveData.pickups += 1;
-			PlayerPrefs.SetInt("pickups"+saveData.slot, saveData.pickups);
+			SaveLoadManager.instance.pickups += 1;
+			PlayerPrefs.SetInt("pickups"+ SaveLoadManager.instance.slot, SaveLoadManager.instance.pickups);
 			
 			// Destrói o item
 			Destroy(other);
