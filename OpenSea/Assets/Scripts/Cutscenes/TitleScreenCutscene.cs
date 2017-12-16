@@ -7,7 +7,7 @@ using DG.Tweening;
 public class TitleScreenCutscene : MonoBehaviour {	
 	
 	[Header("> Actors")]
-	public Camera camera;
+	public Camera cam;
 	public Image fadePanel;
 	public GameObject initialMenu;
 	
@@ -16,7 +16,8 @@ public class TitleScreenCutscene : MonoBehaviour {
 	
 	// Inicialização
 	void Start () {
-		cameraAudio = camera.GetComponent<AudioSource>();
+        fadePanel.gameObject.SetActive(true);
+		cameraAudio = cam.GetComponent<AudioSource>();
 		scriptAudio = GetComponent<AudioSource>();
 		
 		// Inicia a cena
@@ -25,6 +26,7 @@ public class TitleScreenCutscene : MonoBehaviour {
 	
 	IEnumerator Cutscene() {		
 		// Fade in
+        
 		fadePanel.DOFade(0, 1);
 		
 		yield return new WaitForSeconds(1);

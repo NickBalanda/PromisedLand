@@ -12,5 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScreen.unity
     guid: 167f5ff0bab2389478bc52019a2392de
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/HUB.unity
     guid: 4b1dec8a6284a1d4782dacc5d6478e8a
