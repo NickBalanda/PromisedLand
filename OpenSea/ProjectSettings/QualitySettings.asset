@@ -121,6 +121,7 @@ QualitySettings:
   m_PerPlatformDefaultQuality:
     Android: 0
     Nintendo 3DS: 3
+    Nintendo Switch: 3
     PS4: 3
     PSM: 3
     PSP2: 0

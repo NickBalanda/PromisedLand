@@ -96,7 +96,7 @@ public class SettingMenu : MonoBehaviour {
         }
     }
 
-    public void SetSFXVolume() {
+	public void SetSFXVolume() {
 
     }
 
