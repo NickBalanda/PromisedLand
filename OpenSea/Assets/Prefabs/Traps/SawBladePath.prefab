@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1703704030663910}
+  m_IsPrefabParent: 1
+--- !u!1 &1654265266606194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4633506221268018}
+  - component: {fileID: 33977157999916276}
+  - component: {fileID: 23687779402007612}
+  m_Layer: 0
+  m_Name: SawBladeFrameBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1703704030663910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4223217637018374}
+  m_Layer: 0
+  m_Name: SawBladePath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1883761318871138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4291690795048822}
+  - component: {fileID: 33462832647999978}
+  - component: {fileID: 23326455832397336}
+  - component: {fileID: 65214809895476456}
+  - component: {fileID: 114724643023458850}
+  - component: {fileID: 114664687529871240}
+  m_Layer: 0
+  m_Name: SawBlade
+  m_TagString: Death
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4223217637018374
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1703704030663910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.4, y: 1.26, z: 56.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4291690795048822}
+  - {fileID: 4633506221268018}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4291690795048822
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883761318871138}
+  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.10318327, y: -0.26, z: 0.059999466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4223217637018374}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4633506221268018
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1654265266606194}
+  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04361534, y: -0.26, z: 7.688}
+  m_LocalScale: {x: 1.000001, y: 0.99999964, z: 6.1852565}
+  m_Children: []
+  m_Father: {fileID: 4223217637018374}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23326455832397336
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883761318871138}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0bf6b0d31cf73b8479090d219f8b9da1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &23687779402007612
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1654265266606194}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0bf6b0d31cf73b8479090d219f8b9da1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33462832647999978
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883761318871138}
+  m_Mesh: {fileID: 4300000, guid: e3a25d4ccafb5c740aa3c70982a173e2, type: 3}
+--- !u!33 &33977157999916276
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1654265266606194}
+  m_Mesh: {fileID: 4300000, guid: 45cdd7be55c783844add8ed6d9828f62, type: 3}
+--- !u!65 &65214809895476456
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883761318871138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34, y: 3.2171524, z: 2.52}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114664687529871240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883761318871138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f5b6bdba0330e45bc973f99419d392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTweenType: 0
+  playOnStart: 1
+  startDelay: 0
+  movePosition: {x: 0, y: 0, z: 16}
+  moveDuration: 1.5
+  localMove: 0
+  scaleDuration: 0
+  scaleSize: 0
+  rotatePosition: {x: 0, y: 0, z: 0}
+  rotateDuration: 0
+  rotateMode: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
+  colorDuration: 0
+  waypoints: []
+  pathDuration: 0
+  closePath: 0
+  pathType: 0
+  pathMode: 0
+  localPath: 0
+  shakePosition: 1
+  shakeRotation: 0
+  shakeScale: 0
+  shakePduration: 0
+  shakePstrenght: 1
+  shakePvibrato: 10
+  shakePrandomness: 90
+  shakePsnapping: 0
+  shakePfadeOut: 1
+  shakeRduration: 0
+  shakeRstrenght: 90
+  shakeRvibrato: 10
+  shakeRrandomness: 90
+  shakeRfadeOut: 1
+  shakeSduration: 0
+  shakeSstrenght: 1
+  shakeSvibrato: 10
+  shakeSrandomness: 90
+  shakeSfadeOut: 1
+  numLoops: -1
+  delayBetweenLoops: 0
+  loopeType: 1
+  ease: 1
+--- !u!114 &114724643023458850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883761318871138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f5b6bdba0330e45bc973f99419d392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTweenType: 2
+  playOnStart: 1
+  startDelay: 0
+  movePosition: {x: 0, y: 0, z: 0}
+  moveDuration: 0
+  localMove: 0
+  scaleDuration: 0
+  scaleSize: 0
+  rotatePosition: {x: 90, y: 0, z: 0}
+  rotateDuration: 0.2
+  rotateMode: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
+  colorDuration: 0
+  waypoints: []
+  pathDuration: 0
+  closePath: 0
+  pathType: 0
+  pathMode: 0
+  localPath: 0
+  shakePosition: 1
+  shakeRotation: 0
+  shakeScale: 0
+  shakePduration: 0
+  shakePstrenght: 1
+  shakePvibrato: 10
+  shakePrandomness: 90
+  shakePsnapping: 0
+  shakePfadeOut: 1
+  shakeRduration: 0
+  shakeRstrenght: 90
+  shakeRvibrato: 10
+  shakeRrandomness: 90
+  shakeRfadeOut: 1
+  shakeSduration: 0
+  shakeSstrenght: 1
+  shakeSvibrato: 10
+  shakeSrandomness: 90
+  shakeSfadeOut: 1
+  numLoops: -1
+  delayBetweenLoops: 0
+  loopeType: 2
+  ease: 1
