@@ -145,6 +145,10 @@ public class TweenOptions : MonoBehaviour {
         DOTween.PlayAll();
     }
 
+    public void KillAllTweens() {
+        DOTween.KillAll();
+    }
+
     void OnDrawGizmosSelected() {
         Gizmos.color = Color.green;
 
