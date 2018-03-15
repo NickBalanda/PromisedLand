@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
+    public bool isDead = false;
+
     CharacterAnimator ca;
     PlayerController pc;
     PlayerMotor pm;
@@ -21,10 +23,14 @@ public class PlayerHealth : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Death")) {
-            print("U dead!");
-            ca.anim.SetBool("isDead", true);
-            pc.enabled = false;
-            pm.agent.isStopped = true;
+            if (!isDead) {
+                print("U dead!");
+                ca.anim.SetBool("isDead", true);
+                pc.enabled = false;
+                pm.agent.isStopped = true;
+                LevelManager.instance.PlayerKilled();
+                isDead = true;
+            }
         }
     }
 }
