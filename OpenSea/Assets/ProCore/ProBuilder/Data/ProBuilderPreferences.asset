@@ -29,7 +29,8 @@ MonoBehaviour:
   - pbEditorScroll.x
   - pbEditorScroll.y
   - pbExtrudeDistance
-  m_String_keys: []
+  m_String_keys:
+  - pbCurrentMaterialPalette
   m_Color_keys: []
   m_Material_keys:
   - pbDefaultMaterial
@@ -39,7 +40,8 @@ MonoBehaviour:
   - 0
   - 0
   - 1
-  m_String_values: []
+  m_String_values:
+  - Assets/ProCore/ProBuilder/Data/Default Material Palette.asset
   m_Color_values: []
   m_Material_values:
   - {fileID: 2100000, guid: 55296d1b6ee54e14e8eb4648d4b448ee, type: 2}
