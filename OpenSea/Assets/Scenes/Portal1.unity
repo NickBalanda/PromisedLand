@@ -46958,7 +46958,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 826074365}
   selectedCommands:
-  - {fileID: 826074367}
+  - {fileID: 826074368}
   variables: []
   description: 
   stepPause: 0
@@ -47060,7 +47060,7 @@ MonoBehaviour:
   storyText: This place is dangerous i must be careful
   description: 
   character: {fileID: 1512947767}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bc540953bd4250d4a9d127a4e6ca427e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -47086,7 +47086,7 @@ MonoBehaviour:
   storyText: I need to activate the first crystal key
   description: 
   character: {fileID: 1512947767}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bc540953bd4250d4a9d127a4e6ca427e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -47334,7 +47334,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1595701524}
 --- !u!114 &826074367
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826074354}
@@ -47434,7 +47434,7 @@ MonoBehaviour:
   storyText: 'Hmm... Maybe there is a button to turn the fire off '
   description: 
   character: {fileID: 1512947767}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bc540953bd4250d4a9d127a4e6ca427e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -98134,7 +98134,8 @@ MonoBehaviour:
   nameText: Hero
   nameColor: {r: 0.18039216, g: 0.3529412, b: 0.15686275, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: bc540953bd4250d4a9d127a4e6ca427e, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -112916,8 +112917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 178.5, y: 217.5}
-  m_SizeDelta: {x: 357, y: 435}
+  m_AnchoredPosition: {x: 178.5, y: 204.62}
+  m_SizeDelta: {x: 357, y: 460.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690084096
 MonoBehaviour:
@@ -112959,7 +112960,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc540953bd4250d4a9d127a4e6ca427e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -130992,7 +130993,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 335}
+  m_SizeDelta: {x: 0, y: 273.58}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2089839349
 MonoBehaviour:
@@ -131050,16 +131051,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2647059, g: 0.17133398, b: 0.12067475, a: 1}
+  m_Color: {r: 0.25079942, g: 0.12067475, b: 0.2647059, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4f1fee3de32377429fd1348fae62b10, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 1
+  m_Sprite: {fileID: 21300000, guid: 74079d256ca36a9478474dd02dfbca98, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
